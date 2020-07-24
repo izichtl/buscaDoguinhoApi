@@ -1,5 +1,8 @@
 const userModel = require('../models/UserModel')
 
+
+//Create REST methods controllers
+
 class UserController {
     async create(req, res) {
         const { body } = req;

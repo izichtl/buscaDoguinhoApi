@@ -8,9 +8,9 @@ Run app
 > npm start 
 
 ### This project use
-* [Node](https://nodejs.org/en/) JavaScript runtim.
-* [Express](https://expressjs.com/en/starter/installing.html) markdown editor.
-* [MongoDB](http://dillinger.io) markdown editor.
+* [Node](https://nodejs.org/en/) JavaScript runtime.
+* [Express](https://expressjs.com/en/starter/installing.html) web framework for Node.
+* [MongoDB](http://dillinger.io) NoSQL DataBase.
 * [Mongoose](https://mongoosejs.com/docs/) mongodb object modeling for node.
 * [Dillinger](http://dillinger.io) markdown editor.
 

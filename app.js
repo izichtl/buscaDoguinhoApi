@@ -5,6 +5,8 @@ const morgan = require('morgan')
 const userRouter = require('./routers/UserRouter')
 
 
+//Starts app
+
 class App {
     constructor(){
         this.app = express()
@@ -13,13 +15,13 @@ class App {
         this.routers()
     }
 
-
+//Call de middlewares
     middlewares(){
         this.app.use(cors())
         this.app.use(morgan('dev'))
         this.app.use(express.json())
     }
-
+//Call Database
     database(){
         mongoose.connect('mongodb://localhost:27017/apinode1', {
             useNewUrlParser: true,
@@ -32,6 +34,7 @@ class App {
             console.log(error)
         })
     }
+//Call instance routers 
     routers(){
         this.app.use(userRouter)
     }
