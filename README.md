@@ -1,6 +1,10 @@
 ## Node/Mongo RESTFul 
 Node RESTful with MongoDB boilerplate made as study proposal 
 ### Installation
+
+Install MongoDB
+>run mongod with --dbpah C:\databaselocaladress
+
 Install dependency 
 >npm install
 
