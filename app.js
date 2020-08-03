@@ -34,6 +34,9 @@ class App {
             console.log(error)
         })
     }
+    build(){
+        this.app.use(express.static('client/build'));
+    }
 //Call instance routers 
     routers(){
         this.app.use(DoguinhoRouter)
