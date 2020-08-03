@@ -8,7 +8,8 @@ const path = require('path')
 router.get('/doguinho', DoguinhoController.listDoguinhos)
 router.get('/doguinho/:_id', DoguinhoController.listById)
 router.get('/*', function (req, res) {
-    res.sendFile('index.html', { root: path.join(__dirname, '../client','build') });
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Busca Doguinho API, por favor acesse /doguinho ou /doguinho/id');
 });
 
 

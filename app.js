@@ -24,7 +24,7 @@ class App {
     }
 //Call Database
     database(){
-        mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost:27017/jsonteste', {
+        mongoose.connect('mongodb+srv://doguinho:NyV65niDIFtlbVOS@cluster0.9rjmz.gcp.mongodb.net/jsonteste?retryWrites=true&w=majority', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
