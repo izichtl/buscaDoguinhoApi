@@ -4,7 +4,7 @@ const favicon = require('express-favicon')
 const PORT = process.env.PORT || 8080;
 
 
-app.use(favicon(__dirname + '/build/favicon.ico'));
+app.use(favicon(__dirname + '/client/build/favicon.ico'));
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
