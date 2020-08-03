@@ -1,3 +1,4 @@
+
 ## Node/Mongo RESTFul 
 Node RESTful with MongoDB boilerplate made as study proposal 
 ### Installation
@@ -18,4 +19,4 @@ Run app
 * [Mongoose](https://mongoosejs.com/docs/) mongodb object modeling for node.
 * [Dillinger](http://dillinger.io) markdown editor.
 
-________________________________________________//
+.________________________________________________//
