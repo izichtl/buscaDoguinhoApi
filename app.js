@@ -6,6 +6,7 @@ const DoguinhoRouter = require('./routers/DoguinhoRouter')
 
 
 
+
 //Starts app
 class App {
     constructor(){
@@ -23,7 +24,7 @@ class App {
     }
 //Call Database
     database(){
-        mongoose.connect('mongodb+srv://doguinho:NyV65niDIFtlbVOS@cluster0.9rjmz.gcp.mongodb.net/jsonteste?retryWrites=true&w=majority', {
+        mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost:27017/jsonteste', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
@@ -34,9 +35,7 @@ class App {
             console.log(error)
         })
     }
-    build(){
-        this.app.use(express.static('client/build'));
-    }
+    
 //Call instance routers 
     routers(){
         this.app.use(DoguinhoRouter)
