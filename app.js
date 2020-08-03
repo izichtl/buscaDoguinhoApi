@@ -2,11 +2,11 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const morgan = require('morgan')
-const userRouter = require('./routers/UserRouter')
+const DoguinhoRouter = require('./routers/DoguinhoRouter')
+
 
 
 //Starts app
-
 class App {
     constructor(){
         this.app = express()
@@ -23,7 +23,7 @@ class App {
     }
 //Call Database
     database(){
-        mongoose.connect('mongodb://localhost:27017/apinode1', {
+        mongoose.connect('mongodb+srv://doguinho:NyV65niDIFtlbVOS@cluster0.9rjmz.gcp.mongodb.net/jsonteste?retryWrites=true&w=majority', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
@@ -36,7 +36,7 @@ class App {
     }
 //Call instance routers 
     routers(){
-        this.app.use(userRouter)
+        this.app.use(DoguinhoRouter)
     }
 }
 
