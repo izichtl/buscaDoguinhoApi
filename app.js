@@ -1,10 +1,13 @@
 const express = require('express')
+require('dotenv').config()
 const mongoose = require('mongoose')
 const cors = require('cors')
 const morgan = require('morgan')
 const DoguinhoRouter = require('./routers/DoguinhoRouter')
 
-
+console.log(process.env.TTT, 'urI')
+console.log(process.env.MONGO_URI, 'urI')
+const uri = 'mongodb+srv://doguinho:NyV65niDIFtlbVOS@cluster0.9rjmz.gcp.mongodb.net/jsonteste?retryWrites=true&w=majority'
 
 
 //Starts app
