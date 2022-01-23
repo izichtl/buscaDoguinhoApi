@@ -1,16 +1,16 @@
 {
   "name": "busca-doguinho-api",
   "version": "1.0.0",
+  "private": true,
   "description": "webapi to get a random dog profile",
-  "main": "server.js",
+  "main": "index.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "author": "izichtlº",
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
